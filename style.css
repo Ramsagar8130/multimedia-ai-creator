@@ -1,0 +1,80 @@
+/* पूरी ऐप का बेसिक रीसेट और बैकग्राउंड */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    /* गहरा नीला/काला AI थीम कलर */
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* हेडर (शीर्षक) का डिज़ाइन */
+header {
+    background-color: #1e293b;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #334155;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #38bdf8;
+    /* स्काई ब्लू कलर */
+}
+
+/* फीचर्स ग्रिड (बटन रखने की जगह) */
+#app-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* सुंदर AI बटन्स का डिज़ाइन */
+.btn {
+    background-color: #1e293b;
+    color: #ffffff;
+    border: 1px solid #475569;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* बटन पर क्लिक या टच करने पर चमकने वाला इफ़ेक्ट */
+.btn:hover,
+.btn:active {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border-color: #38bdf8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.3);
+}
+
+/* नीचे AdMob बैनर की जगह */
+#admob-banner {
+    background-color: #1e293b;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #334155;
+    font-size: 14px;
+    color: #94a3b8;
+}
